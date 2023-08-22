@@ -2,7 +2,6 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  max-width: 1200px;
   margin: 20px auto;
 }
 .theme-buttons div {
@@ -30,4 +29,57 @@
 .rotated {
   transform: rotateY(180deg);
   filter: invert(100%);
+}
+
+@media screen and (min-width: 2160px) {
+  .toggle-mode img {
+    width: 4rem;
+    height: 4rem;
+  }
+  .theme-buttons div {
+    width: 3rem;
+    height: 3rem;
+    
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .theme-selector {
+    margin-right: 3rem;
+  }
+  .rotatable-image {
+    margin-left: 3rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .theme-selector {
+    margin-right: 3rem;
+  }
+  .rotatable-image {
+    margin-left: 3rem;
+  }
+}
+@media screen and (min-width: 425px) {
+  .theme-selector {
+    margin-right: 3rem;
+  }
+  .rotatable-image {
+    margin-left: 3rem;
+  }
+}
+@media screen and (min-width: 375px) {
+  .theme-selector {
+    margin-right: 3rem;
+  }
+  .rotatable-image {
+    margin-left: 3rem;
+  }
+}
+@media screen and (min-width: 320px) {
+  .theme-selector {
+    margin-right: 2rem;
+  }
+  .rotatable-image {
+    margin-left: 2rem;
+  }
 }
