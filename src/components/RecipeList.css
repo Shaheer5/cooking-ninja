@@ -14,6 +14,7 @@
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease;
   position: relative;
+  min-width: 200px;
 }
 
 .recipe-list .card:hover {
@@ -105,8 +106,6 @@
     grid-template-columns: repeat(2, 1fr);
     margin: auto 2rem;
   }
-  
-  
 }
 
 @media screen and (max-width: 768px) {
@@ -121,8 +120,6 @@
     grid-template-columns: repeat(1, 1fr);
     margin: auto 1rem;
   }
-}
-@media screen and (min-width: 425px) {
 }
 
 @media screen and (max-width: 375px) {
