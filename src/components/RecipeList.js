@@ -12,7 +12,7 @@ export default function RecipeList({ recipes }) {
   const { mode } = useTheme();
 
   const handleDelete = (id) => {
-   projectFirestore.collection('recipes').doc(id).delete();
+    projectFirestore.collection('recipes').doc(id).delete();
 
     // way to refresh page if not using real-time db with async-ing the parent funtion
     // window.location.reload();
@@ -21,11 +21,15 @@ export default function RecipeList({ recipes }) {
   if (recipes.length === 0) {
     return <div className='error'>No Recipes to load</div>
   }
+
+
   return (
     <div className="recipe-list">
       {recipes.map(recipe => (
         <div key={recipe.id} className={`card ${mode}`}>
-          <h3>{recipe.title}</h3>
+          <h3>
+            {recipe.title.length > 20 ? ( recipe.title.substring(0, 20) + "..." ) : ( recipe.title )}
+            </h3>
           <p>{recipe.cookingTime} to make</p>
           <p>{recipe.method.substring(0, 100)}...</p>
           <Link className='cook-this' to={`./recipes/${recipe.id}`}>Cook This</Link>

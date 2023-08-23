@@ -23,7 +23,6 @@
 .recipe-list .card h3 {
   color: #555;
   margin-bottom: 6px;
-  max-width: 80%;
 }
 
 .recipe-list .card p {
@@ -72,69 +71,67 @@
 }
 
 
-@media screen and (min-width: 2160px) {
-  .recipe-list {
-    grid-gap: 25%;
-    position: absolute;
-    left: 5%;
+
+@media screen and (min-width: 1800px) {
+  .card h3 {
+    font-size: 3rem;
   }
-  .recipe-list .card {
-    width: 200%;
-    padding: 4rem;
-  }
-  .recipe-list h3 {
-    font-size: 3rem;  
-  }
-  .recipe-list p {
+  .card p {
     font-size: 2rem !important;
   }
   .recipe-list .cook-this {
-    width: 200px !important;
+    width: 200px;
     font-size: 2rem;
   }
-  .deleteIcon {
-    width: 3rem;
+}
+
+
+@media screen and (min-width: 1500px) {
+  .recipe-list {
+    margin: auto 2rem;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .recipe-list {
+    margin: auto 2rem;
+  }
+  .recipe-list .cook-this {
+    width: 120px;
+    font-size: 1.2rem;
   }
 }
 @media screen and (max-width: 1024px) {
   .recipe-list {
     grid-template-columns: repeat(2, 1fr);
-    margin: auto 1rem;
+    margin: auto 2rem;
   }
+  
   
 }
 
 @media screen and (max-width: 768px) {
   .recipe-list {
     grid-template-columns: repeat(2, 1fr);
-    margin: auto 2rem;
+    margin: auto 1rem;
   }
 }
 
-@media screen and (min-width: 425px) {
-  .recipe-list .card h3 {
-    width: 20%;
-  }
-  .deleteIcon {
-    width: 3rem;
-  }
-}
-
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 600px) {
   .recipe-list {
     grid-template-columns: repeat(1, 1fr);
     margin: auto 1rem;
   }
 }
+@media screen and (min-width: 425px) {
+}
+
 @media screen and (max-width: 375px) {
   .recipe-list {
-    grid-template-columns: repeat(1, 1fr);
-    margin: auto 1rem;
+    margin: auto 0.5rem;
   }
 }
-@media screen and (max-width: 320px) {
-  .recipe-list {
-    grid-template-columns: repeat(1, 1fr);
-    margin: auto 1rem;
+@media screen and (min-width: 320px) {
+  .deleteIcon {
+    width: 3rem;
   }
 }
