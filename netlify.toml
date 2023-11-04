@@ -1,2 +1,5 @@
 variables:
   CI: "false"
+
+[build]
+  environment = { CI = "false" }
