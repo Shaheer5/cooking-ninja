@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'
 
 // page components
 import Navbar from './components/Navbar'
@@ -18,7 +18,7 @@ function App() {
   
   return (
     <div className={`App ${mode}`}>
-      <BrowserRouter>
+      <Router>
         <Navbar />
         <ThemeSelector />
         <Routes>
@@ -31,7 +31,7 @@ function App() {
           <Route path="/recipes/:id" element={< Recipe />} />
 
         </Routes>
-      </BrowserRouter>
+      </Router>
     </div>
   );
 }
