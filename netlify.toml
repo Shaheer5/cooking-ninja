@@ -1,0 +1,4 @@
+variables:
+  CI: "false"
+
+# ... other CI/CD configuration ...
